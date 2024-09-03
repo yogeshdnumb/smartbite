@@ -44,7 +44,7 @@ export default function Header({
           onClick={toggleMobileNavbar}
           hiddenFrom="xs"
         />
-        <Text>Mantine</Text>
+        <Text>SmartBite</Text>
         <Group ml={"auto"}>
           <Autocomplete
             visibleFrom="xs"
@@ -64,7 +64,7 @@ export default function Header({
             )}
           </ActionIcon>
         </Group>
-        <ActionIcon
+        {/* <ActionIcon
           variant="default"
           size={"lg"}
           onClick={() => {
@@ -72,7 +72,7 @@ export default function Header({
           }}
         >
           <FiPlus size={"70%"}></FiPlus>
-        </ActionIcon>
+        </ActionIcon> */}
       </Group>
     </AppShell.Header>
   );

@@ -16,6 +16,7 @@ export default function Layout() {
     <AppShell
       padding={"sm"}
       // withBorder
+      footer={{ height: 30 }}
       header={{ height: 60 }}
       navbar={{
         width: 250,
