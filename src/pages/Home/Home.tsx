@@ -40,14 +40,14 @@ export default function Home() {
           ></Image>
           <Button
             onClick={async () => {
-              console.log(imgFiles[0]);
+              // console.log(imgFiles[0]);
 
               const formData = new FormData();
               formData.append("img", imgFiles[0]);
 
               try {
                 const response = await fetch(
-                  "https://duly-shining-slug.ngrok-free.app/upload",
+                  import.meta.env.VITE_BACKEND_URL + "/upload",
                   {
                     method: "post",
                     body: formData,
@@ -81,7 +81,7 @@ export default function Home() {
             id="img-input"
             style={{ display: "none" }}
             onChange={(e) => {
-              console.log(e.currentTarget.files);
+              // console.log(e.currentTarget.files);
 
               setImgFiles(e.currentTarget.files);
             }}
