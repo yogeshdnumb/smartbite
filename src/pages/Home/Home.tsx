@@ -47,8 +47,8 @@ export default function Home() {
 
               try {
                 const response = await fetch(
-                  import.meta.env.VITE_BACKEND_URL ||
-                    "http://localhost:5000" + "/upload",
+                  (import.meta.env.VITE_BACKEND_URL ||
+                    "http://localhost:3000") + "/upload",
                   {
                     method: "post",
                     body: formData,
